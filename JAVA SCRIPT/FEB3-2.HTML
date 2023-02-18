@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>IMAGE RUNNING</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #b{
+            width: 320px;
+        }
+        #a{
+            position: absolute;
+            bottom:0px;
+        }
+
+
+
+    </style>
+</head>
+<body onkeydown="jump()" onkeyup="back()">
+    <marquee id="a" direction="right" scrollamount="40">
+        <img  id="b" src="C:\SRC\Downloads\aa.gif">
+
+
+    </marquee>
+    <script>
+        function jump()
+        {
+            document.getElementById("a").style.bottom="120px"
+        }
+        function back()
+        {
+            document.getElementById("a").style.bottom="0px"
+        }
+    </script>
+</body>
+</html>

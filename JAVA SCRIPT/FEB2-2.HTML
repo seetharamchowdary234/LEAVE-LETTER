@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+</head>
+<style>
+    span{
+        font-size: 20px;
+    }
+</style>
+<body id="b">
+    <input type="color" id="a" oninput="col()">
+    <br><br><br>
+   <input type="text" placeholder="enteranything" id="c" oninput="text()">
+   <select id="e" onchange="fontsiz()">
+    <option>10</option>
+    <option>20</option>
+    <option>30</option>
+    <option>40</option>
+    <option>50</option>
+    <option>60</option>
+    <option>70</option>
+    <option>80</option>
+    <option>90</option>
+    <option>100</option>
+    <option>110</option>
+    <option>120</option> 
+   <option>130</option>
+
+
+</select>
+<input type="color" id="f" oninput="textcol()">
+<br><br><br>
+<span id="d"></span>
+    <script>
+        function col()
+        {
+            var color=document.getElementById("a").value
+document.getElementById("b").style.backgroundColor=color
+        }
+        function text()
+        {
+           var text=document.getElementById("c").value 
+document.getElementById("d").innerHTML=text
+        }
+        function fontsiz()
+        {
+            
+            var siz=document.getElementById("e").value 
+document.getElementById("d").style.fontsize=siz+"px"
+
+        }
+        function textcol()
+        {
+            var color=document.getElementById("f").value 
+document.getElementById("d").style.color=color 
+
+        }
+    </script>
+</body>
+</html>

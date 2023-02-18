@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <STYLE>
+        body{
+            width: 100%;
+            height: 500px;
+        }
+    </STYLE>
+</head>
+   
+<body onmousedown="mouseclicked()" onmouseup="mouserel()">
+    <span id="a"></span>
+
+    <script>
+        function mouseclicked()
+        {
+            document.getElementById("a").innerHTML="message"
+        }
+        function mouserel()
+        {
+            
+            document.getElementById("a").innerHTML=""
+
+        }
+
+
+    </script>
+    
+</body>
+</html>

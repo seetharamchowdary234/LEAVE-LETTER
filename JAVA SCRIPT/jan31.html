@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+     
+    <h1>IM FROM <span id="a"></span></h1>
+    <select id="b" onchange="places()">
+        <option value="select the places">places</option>
+        <option>hyderbad</option>
+        <option>hongkong</option>
+        <option>vizag</option>
+        <option>goa</option>
+    
+    </select>
+<script>
+    function places()
+    {
+        var
+ places=document.getElementById("b").Value
+ document.getElementById("a").innerHTML=places
+
+    }
+</script>
+    
+</body>
+</html>

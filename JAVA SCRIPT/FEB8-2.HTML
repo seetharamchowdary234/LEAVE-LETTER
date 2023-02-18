@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>DIGITALCLOCK</title>
+    <link rel="stylesheet" href="https://w7.pngwing.com/pngs/680/15/png-transparent-alarm-clock-movement-quartz-clock-digital-clock-clock-angle-time-ikea-thumbnail.png">
+</head>
+<body on load="digitalclock()">
+    <h1 id="time"></h1>
+    <h1 id="sec"></h1>
+    <h1 id="date"></h1>
+    <h1 id="day"></h1>
+    <script>\7       function DIGITALCLOCK()   
+        {
+            var date=new Date()
+            var hh=date.getHours()
+            var mm=date.getMinutes()
+            var ss=date.getseconds()
+            var dd=date.getDate()
+            var mo=date.getMonth()
+            var yy=date.getFullYear()
+            var dy=date.getDay()
+            document.write(dd+"/"+ mo+"/"+yy+"/"+dy)
+        }
+    </script>                  
+</body>

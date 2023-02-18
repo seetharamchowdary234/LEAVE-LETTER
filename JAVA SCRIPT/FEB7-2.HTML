@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>EMAIL</title>
+</head>
+<style>
+    *
+    {
+        padding: 0px;
+        margin: 0px;
+    }
+    #fs{
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        width: 300px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+
+    }
+    #in{
+        width: 100%;
+        height: 30px;
+        font-size: 20px;
+        padding-left: 10px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+
+
+    }
+    #1{
+        font-size: 20px;
+    }
+</style>
+<body>
+    <fieldset ID="fs">
+        <legend id="1" style="display:none;">EMAIL OR PHONE</legend>
+        <input placeholder="EMAIL OR PHONE" id="in" onfocus="fun()" onblur="notfun()">
+    </fieldset>
+    <script>
+    function fun()
+     {
+            document.getElementById("in").removeAttribute("placeholder")
+            
+            document.getElementById("1").removeAttribute("style")
+            
+            document.getElementById("1").style.color="blue"
+            
+            document.getElementById("fs").style.borderColor="blue"
+        }
+        function notfun()
+        {
+            document.getElementById("in").setAttribute("placeholder","EMAIL OR PHONE")
+            
+            document.getElementById("1").setAttribute("style", "display:none")
+            
+            document.getElementById("fs").style.borderColor="black"
+
+        }
+            
+            4
+
+        
+
+    </script>
+
+    
+</body>
+</html>
